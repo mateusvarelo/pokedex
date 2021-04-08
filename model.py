@@ -3,15 +3,16 @@ import pandas as pd
 
 class PokedexModel():
     def __init__(self):
-        self.url = 'https://pokeapi.co/api/v2/pokemon/'
+        self.url ="https://pokeapi.co/api/v2/"
+        self.recurso_pokemon ="encounter-method"
 
-    def solicitar_json(self, name_pokemon):
-        response = self.requisitar(name_pokemon)
+    def solicitar_json(self,metodos_encontro):
+        response = self.requisitar(metodos_encontro)
         return response.json()
 
-    def solicitar_csv(self, name_pokemon):
-        response = self.requisitar(name_pokemon)
-        return self.converter_csv(response.content)
+    def solicitar_csv(self, metodos_encontro):
+        response = self.requisitar(metodos_encontro)
+        return self.convert_csv(response.content)
 
     def requisitar(self, metodos_encontro):
         return get(f"{self.url}{self.recurso_pokemon}/{metodos_encontro}")
