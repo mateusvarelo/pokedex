@@ -1,4 +1,5 @@
 from controller import PokedexControl
+
 class PokedexView():
     def __init__(self):
         self.controller = PokedexControl()
