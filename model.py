@@ -13,11 +13,9 @@ class PokedexModel():
         response = self.requisitar(name_pokemon)
         return self.converter_csv(response.content)
 
-    def requisitar(self, name_pokemon):
-        return get(f'{self.url}{name_pokemon}')
-
-    def converter_csv(self, json):
-        f = pd.read_json(json)
-        return f.to_csv() 
-
+    def requisitar(self, metodos_encontro):
+        return get(f"{self.url}{self.recurso_pokemon}/{metodos_encontro}")
     
+    def convert_csv(self, dados_request):
+        f = pd.read_json(dados_request)
+        return f.to_csv()
