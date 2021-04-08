@@ -1,11 +1,16 @@
 from view import PokedexView
 
-print("Digite um nome de um pokémon.")
-print("Ou se preferir digite um número entre 1 é 1118 que corresponde a um pokémon.")
-nome_numero = input()
-print("Qual tipo de arquivo (CSV)ou(JSON):")
-tipo = input()
+print(
+    "Digite um número entre 1 e 27(Corresponde a um local onde você poderá"
+    "encontrar um  pokémon):"
+     )  
+
+numero_local = input(":") 
+rint("Qual tipo de arquivo 1(CSV) ou 2-(JSON):") 
+
+tipo = int(input(":"))  
+
 pokemon = PokedexView()
-pokemon.pesquisar(nome_numero,tipo)
+pokemon.pesquisar(numero_local,tipo)
 
 print(pokemon.resposta())
