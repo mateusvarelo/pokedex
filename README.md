@@ -29,7 +29,7 @@ Criamos um fluxograma para estruturar a ideia dentro do modelo MVC e e reaprovei
 
             API: https://pokeapi.co/api/v2/pokemon/
 
-> ### Bibliotecas arquivos muito mais!
+> ### Bibliotecas, arquivos muito mais!
 Para conseguir extrair os dados da API utilizamos o request, uma biblioteca do Python
 Dentro do modelo MVC (model, view e controller), requisitamos os dados da API em Json e convertemos em CSV. Para converter foi necessário utilizar a biblioteca pandas, e armazenamos os dados das duas formas. 
 
