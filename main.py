@@ -6,11 +6,11 @@ print(
      )  
 
 numero_local = input(":") 
-rint("Qual tipo de arquivo 1(CSV) ou 2-(JSON):") 
+print("Qual tipo de arquivo 1(CSV) ou 2-(JSON):") 
 
 tipo = int(input(":"))  
 
 pokemon = PokedexView()
-pokemon.pesquisar(numero_local,tipo)
+pokemon.pesquisar_pokemon(numero_local,tipo)
 
 print(pokemon.resposta())
