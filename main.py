@@ -6,6 +6,7 @@ print(
      )  
 
 numero_local = input(":") 
+#Colocar método aqui
 print("Qual tipo de arquivo 1(CSV) ou 2-(JSON):") 
 
 tipo = int(input(":"))  
