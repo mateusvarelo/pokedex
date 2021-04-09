@@ -4,7 +4,7 @@ from art import *
 print(text2art('''{"Pokedex": "Pi"} ''', font="amall"))
 
 print(
-    "Digite um número entre 1 e 27 (Corresponde a um local onde você poderá"
+    "Digite um número entre 1 a 27 (Corresponde a um local onde você poderá"
     " encontrar um  pokémon) "
     )
 aprint("happ") 
